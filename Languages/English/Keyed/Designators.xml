@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <DesignatorCancelChequer>Chequer cancel</DesignatorCancelChequer>
+  <DesignatorCancelChequerDesc>Cancels designations in a chequer pattern.</DesignatorCancelChequerDesc>
+  <DesignatorCutPlantsBlight>Cut blighted</DesignatorCutPlantsBlight>
+  <DesignatorCutPlantsBlightDesc>Cut only plants that are infected with blight.</DesignatorCutPlantsBlightDesc>
+  <GrowingZoneSame>Uniform grow zone</GrowingZoneSame>
+  <DesignatorGrowingZoneSameDesc>A grow zone that is restricted to selecting a single soil fertility.</DesignatorGrowingZoneSameDesc>
+  <DesignatorReplaceWall>Replace wall</DesignatorReplaceWall>
+  <DesignatorReplaceWallDesc>Replace an existing wall with another material.</DesignatorReplaceWallDesc>
+</LanguageData>
