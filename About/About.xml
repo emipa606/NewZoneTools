@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>New Zone Tools (Continued)</name>
   <packageId>Mlie.NewZoneTools</packageId>
@@ -7,12 +7,13 @@
   <supportedVersions>
     <li>1.1</li>
     <li>1.2</li>
+    <li>1.3</li>
   </supportedVersions>
   <modDependencies />
   <loadAfter />
   <description>[img]https://i.imgur.com/WAEzk68.png[/img]
 Update of NewZoneTools mod
-https://steamcommunity.com/sharedfiles/filedetails/?id=https://ludeon.com/forums/index.php?topic=17094.0
+https://ludeon.com/forums/index.php?topic=17094.0
 
 [img]https://i.imgur.com/7Gzt3Rg.png[/img]
 
@@ -24,7 +25,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=https://ludeon.com/forums
 [/table]
 	
 [img]https://i.imgur.com/NOW7jU1.png[/img]
-Uniform grow tool: Selects a grow zone in an area matching the fertility of the initially selected tile.
+Uniform grow tool: Selects a grow zone in an area matching the fertility of the initially selected tile. Also available in [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1339135272]TD Enhancement Pack[/url]
 
 Chequer cancel tool: Cancel construction or blueprints in a chessboard like pattern.
 
@@ -43,4 +44,3 @@ Chequer cancel tool: Cancel construction or blueprints in a chessboard like patt
 [/list]
 </description>
 </ModMetaData>
-
