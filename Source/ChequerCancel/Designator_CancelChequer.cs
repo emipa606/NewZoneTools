@@ -7,7 +7,7 @@ namespace RimWorld;
 
 public class Designator_CancelChequer : Designator
 {
-    private static readonly HashSet<Thing> seenThings = new HashSet<Thing>();
+    private static readonly HashSet<Thing> seenThings = [];
 
     private IntVec3 startPoint;
 
