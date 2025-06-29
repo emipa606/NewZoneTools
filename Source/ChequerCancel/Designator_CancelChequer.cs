@@ -24,22 +24,18 @@ public class Designator_CancelChequer : Designator
         tutorTag = "Cancel";
     }
 
-    public override int DraggableDimensions => 2;
+    public override DrawStyleCategoryDef DrawStyleCategory => DrawStyleCategoryDefOf.Orders;
 
     public override AcceptanceReport CanDesignateCell(IntVec3 c)
     {
         checked
         {
             AcceptanceReport result;
-            if (!c.InBounds(Map))
+            if (!c.InBounds(Map) || (c.x + c.z + startPoint.x + startPoint.z) % 2 == 1)
             {
                 result = false;
             }
-            else if ((c.x + c.z + startPoint.x + startPoint.z) % 2 == 1)
-            {
-                result = false;
-            }
-            else if (CancelableDesignationsAt(c).Any())
+            else if (cancelableDesignationsAt(c).Any())
             {
                 result = true;
             }
@@ -63,7 +59,7 @@ public class Designator_CancelChequer : Designator
 
     public override void DesignateSingleCell(IntVec3 c)
     {
-        foreach (var designation in CancelableDesignationsAt(c).ToList())
+        foreach (var designation in cancelableDesignationsAt(c).ToList())
         {
             if (designation.def.designateCancelable)
             {
@@ -142,7 +138,7 @@ public class Designator_CancelChequer : Designator
         }
     }
 
-    private IEnumerable<Designation> CancelableDesignationsAt(IntVec3 c)
+    private IEnumerable<Designation> cancelableDesignationsAt(IntVec3 c)
     {
         return from x in Map.designationManager.AllDesignationsAt(c)
             where x.def != DesignationDefOf.Plan
