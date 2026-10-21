@@ -4,4 +4,16 @@
   </Configurations>
   <Project Path="ChequerCancel/ChequerCancel.csproj" />
   <Project Path="SameGrowZone/SameGrowZone.csproj" />
+  <Folder Name="/.github/">
+    <File Path="../.github/copilot-instructions.md" />
+  </Folder>
+  <Folder Name="/XML/About/">
+    <File Path="../About/about.xml" />
+  </Folder>
+  <Folder Name="/XML/Patches/Misc/Designations/">
+    <File Path="../Patches/Misc/Designations/DesignationCategories.xml" />
+  </Folder>
+  <Folder Name="/XML/Languages/English/Keyed/">
+    <File Path="../Languages/English/Keyed/Designators.xml" />
+  </Folder>
 </Solution>

@@ -26,22 +26,22 @@ public class Designator_CancelChequer : Designator
 
     public override DrawStyleCategoryDef DrawStyleCategory => DrawStyleCategoryDefOf.Orders;
 
-    public override AcceptanceReport CanDesignateCell(IntVec3 c)
+    public override AcceptanceReport CanDesignateCell(IntVec3 loc)
     {
         checked
         {
             AcceptanceReport result;
-            if (!c.InBounds(Map) || (c.x + c.z + startPoint.x + startPoint.z) % 2 == 1)
+            if (!loc.InBounds(Map) || (loc.x + loc.z + startPoint.x + startPoint.z) % 2 == 1)
             {
                 result = false;
             }
-            else if (cancelableDesignationsAt(c).Any())
+            else if (cancelableDesignationsAt(loc).Any())
             {
                 result = true;
             }
             else
             {
-                var thingList = c.GetThingList(Map);
+                var thingList = loc.GetThingList(Map);
                 foreach (var thing in thingList)
                 {
                     if (CanDesignateThing(thing).Accepted)

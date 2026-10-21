@@ -34,6 +34,6 @@ public class Designator_ZoneAdd_GrowingSame : Designator_ZoneAdd_Growing
     public override AcceptanceReport CanDesignateCell(IntVec3 c)
     {
         return base.CanDesignateCell(c).Accepted &&
-               Map.fertilityGrid.FertilityAt(c) == Map.fertilityGrid.FertilityAt(startPoint);
+               Map.fertilityGrid.FertilityAt(c).Equals(Map.fertilityGrid.FertilityAt(startPoint));
     }
 }
